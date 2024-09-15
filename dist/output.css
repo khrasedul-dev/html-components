@@ -630,6 +630,10 @@ video {
   align-items: center;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1010,5 +1014,11 @@ video {
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:inline-block {
+    display: inline-block;
   }
 }
