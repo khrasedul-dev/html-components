@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    <div class="w-full h-screen md:flex md:justify-center md:items-center">
+        <div class="md:w-[1020px] flex flex-col items-center md:justify-center m-12 md:flex-row md:items-center gap-2">
+            <div class="w-full flex flex-col gap-4 md:w-1/2 shadow-lg p-6 self-stretch">
+                <h1 class="text-4xl font-bold text-[#333]">Login </h1>
+                <h5 class="text-lg">Doesn't have an account? <a class="text-blue-500" href="./signup.html">Register</a></h5>
+                <form class="flex flex-col gap-4" action="#" method="POST">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label for="email">Email</label>
+                            <span class="text-sm text-blue-500">I don't remember email?</span>
+                        </div>
+                        <input class="w-full px-2 rounded-md outline-1 py-1 outline-gray-400 border-[2px] border-gray-400" type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label for="password">Password</label>
+                            <span class="text-sm text-blue-500">Forgot password?</span>
+                        </div>
+                        <input class="w-full px-2 rounded-md outline-1 py-1 outline-gray-400 border-[2px] border-gray-400" type="password" name="password" id="password" required>
+                    </div>
+                    <!-- remember me -->
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" class="mt-[-2px]">Remember me</label>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full rounded-sm bg-sky-500 py-2 text-white" type="submit">Login</button>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <hr class="border-[1px] border-black w-12 md:w-32">
+                        Or login with 
+                        <hr class="border-[1px] border-black w-12 md:w-32">
+                    </div>
+                    <div class="flex gap-4 items-center justify-center">
+                        <button class="py-2 md:flex md:items-center md:justify-between md:gap-2 px-6 md:px-16 border-2 border-teal-300 text-sm rounded-md " type="button"><i class="fa-brands fa-google"></i> Google</button>
+                        <button class="py-2 md:flex md:items-center md:justify-between md:gap-2 px-6 md:px-16 border-2 border-red-300 text-sm rounded-md " type="button"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                    </div>
+                </form>
+            </div>
+            <div class="w-full hidden md:inline-block md:w-1/2">
+                <img class="w-full" src="./assets/man_front_of_computer.jpg" alt="Art">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
